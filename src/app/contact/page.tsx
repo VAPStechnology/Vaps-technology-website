@@ -14,7 +14,7 @@ const ContactPage = () => {
     <>
       <Breadcrumb
         pageName="Contact Page"
-        description="Lorem ipsum dolor sit amet, consectetur adipiscing elit. In varius eros eget sapien consectetur ultrices. Ut quis dapibus libero."
+        description="At VAPS technology, we're committed to providing exceptional support and ensuring you have everything you need to succeed. Whether you have questions, need assistance, or want to explore collaboration opportunities, we're here to help."
       />
 
       <Contact />
