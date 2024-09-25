@@ -30,11 +30,11 @@ const Contact = () => {
       return;
     }
 
-    console.log("Form data before submission:", form_data);
+    // console.log("Form data before submission:", form_data);
     setLoading(true); // Start loading
     try {
       const response = await axios.post("https://vapstechnology.shop/api/v1/contactUs/submit", form_data);
-      console.log("Response:", response);
+      // console.log("Response:", response);
       if (response.data.statusCode === 200) {
         setSuccessMessage("Your message has been sent successfully!");
         set_form_data({ name: "", email: "", message: "" }); // Reset form
@@ -42,7 +42,7 @@ const Contact = () => {
         setErrorMessage("Failed to send your message. Please try again later.");
       }
     } catch (error) {
-      console.error("Error submitting form:", error);
+      // console.error("Error submitting form:", error);
       setErrorMessage("Failed to send your message. Please try again later.");
     } finally {
       setLoading(false); // Stop loading
